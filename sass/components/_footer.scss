@@ -1,0 +1,225 @@
+/* footer */
+
+.footer-container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer {
+    background-color: var(--hero-footer-bg-color);
+    padding-top: 64px;
+    padding-bottom: 56px;
+
+    .footer-logo {
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+    .footer-span {
+    color: var(--accent-text-color);
+    }
+    }
+
+    }
+
+    .footer-list {
+        @extend %list;
+
+    & .item:not(:last-child) {
+        margin-bottom: 9px;
+        }
+    }
+
+.address {
+    color: var(--light-color);
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    display: inline-block;
+
+    transition: color var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-text-color);
+    }
+}
+
+.footer-number {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: inline-block;
+    transition: color var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-text-color);
+    }
+
+
+}
+.footer-mail{
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: inline-block;
+    transition: color var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+
+}
+
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    
+    &-title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+}
+
+
+
+.flex-footer-list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+
+    .social-link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--light-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--light-color);
+
+    transition: background-color var(--timing--) var(--cubik--);
+    &:hover,
+    &:focus {
+    background-color: var(--accent-text-color);
+    }
+
+    .footer-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--light-color);
+    }
+    }
+}
+
+.mailing {
+    display: flex;
+
+    &-form {
+    margin-left: auto;
+    }
+
+    &-title {
+    display: block;
+    color: var(--light-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+    }
+
+    &-input {
+    width: 358px;
+    height: 50px;
+    background-color: var(--hero-footer-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    color: var(--light-color);
+
+    }
+
+    &-btn {
+    cursor: pointer;
+    color: var(--light-color);
+    background-color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    width: 200px;
+    height: 50px;
+
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+
+    transition: background-color var(--timing--) var(--cubik--),
+    box-shadow var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    }
+    }
+
+    &-icon {
+    width: 24px;
+    height: 24px;
+    }
+}
+
+
+.mailing-input::placeholder-shown {
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

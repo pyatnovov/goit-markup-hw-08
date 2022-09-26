@@ -1,0 +1,19 @@
+:root {
+  /* color */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196F3;
+  --primary-bg-color: #F5F5F5;
+  --secondary-bg-color: #F5F4FA;
+  --light-color: #FFFFFF;
+  --hero-footer-bg-color: #2F303A;
+  --black-logo-color: #000000;
+
+  /* font */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  
+  /* animation */
+  --cubik--: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing--: 250ms;
+}

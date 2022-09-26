@@ -1,0 +1,161 @@
+    .flex-container {
+        @extend %container;
+    }
+
+    .flex-card {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        & .item {
+            width: calc((100% - 60px) / 3);
+            margin-bottom: 0;
+        }
+
+        & .item:nth-child(3n) {
+        margin-right: 0;
+        }
+    }
+
+    .portfolio-link {
+        @extend %link;
+        display: block;
+        transition: box-shadow var(--timing--) var(--cubik--);
+
+        &:hover,
+        &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+        &:hover .hoverinfo {
+            transform: translateY(0);
+            opacity: 1;
+
+        }
+        }
+    }
+
+    .overlay {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .partfolio-img {
+        display: block;
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    .hoverinfo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding-left: 24px;
+        padding-right: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(33, 150, 243, 0.9);
+
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+
+        transform: translateY(101%);
+
+        transition-property: transform, opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        opacity: 0;
+
+        & .info {
+        position: absolute;
+        padding-left: 24px;
+        padding-right: 24px;
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #EEEEEE;
+
+
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #EEEEEE;
+
+
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #EEEEEE;
+
+        &-title {
+            color: var(--primary-text-color);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: calc(36 / 18);
+            letter-spacing: 0.06em;
+
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        &-content {
+            color: var(--secondary-text-color);
+
+            font-size: 16px;
+            line-height: calc(30 / 16);
+            letter-spacing: 0.03em;
+
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

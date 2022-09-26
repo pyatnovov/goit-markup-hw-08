@@ -1,0 +1,61 @@
+/* hero */
+.hero {
+  background-color: var(--hero-footer-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+  color: var(--light-color);
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  width: 696px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+&__button {
+  cursor: pointer;
+  color: var(--light-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  display: block;
+  width: 216px;
+  margin: auto;
+  padding: 10px 32px;
+  align-items: center;
+  text-align: center;
+
+  border: transparent;
+  border-radius: 4px;
+
+  transition: background-color var(--timing--) var(--cubik--);
+
+  &:hover,
+  &:focus{
+    background-color: #188CE8;
+  }
+
+}
+}
+

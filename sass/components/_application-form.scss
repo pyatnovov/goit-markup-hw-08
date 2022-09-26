@@ -1,0 +1,158 @@
+// application-form
+
+.application-form {
+    display: block;
+}
+
+
+.form-title {
+    display: block;
+    text-align: center;
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &-lable {
+    margin-bottom: 4px;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    }
+
+    &-input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    padding-left: 42px;
+    padding-right: 42px;
+
+    transition: border var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+    }
+    }
+
+    &:hover .form-group-icon {
+    fill: var(--accent-text-color);
+    }
+}
+
+.form-group-icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    transition: fill var(--timing--) var(--cubik--);
+
+}
+
+.form-group-textarea {
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    padding-left: 16px;
+    padding-top: 12px;
+
+    resize: none;
+
+    &:hover {
+    border-color: var(--accent-text-color);
+    }
+}
+textarea::placeholder-shown {
+    color: rgba(117, 117, 117, 0.502);
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+
+
+.form-terms {
+    display: block;
+
+    &-label {
+    margin-bottom: 4px;
+    color: var(--secondary-text-color);
+    }
+
+    &-info {
+    display: inline-block;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+    user-select: none;
+    }
+
+    &-link {
+    color: var(--accent-text-color);
+    }
+
+    &-input{
+        @extend %visually-hidden;
+    }
+}
+
+.icon-unchecked {
+    opacity: 1;
+    transition: opacity var(--timing--) var(--cubik--);
+
+.form-terms-input:checked+.form-terms-icons & {
+    opacity: 0;
+}
+    
+}
+
+.icon-checked {
+    opacity: 0;
+    transition: opacity var(--timing--) var(--cubik--);
+
+    .form-terms-input:checked+.form-terms-icons & {
+    opacity: 1;
+}
+
+}
+
+.form-btn {
+    cursor: pointer;
+    color: var(--light-color);
+    background-color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 10px 32px;
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: transparent;
+    border-radius: 4px;
+
+    transition: background-color var(--timing--) var(--cubik--),
+    box-shadow var(--timing--) var(--cubik--);
+
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    }
+}
+
