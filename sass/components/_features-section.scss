@@ -1,21 +1,54 @@
 /* section1 */
 .features-section{
     @extend %section;
-    @extend %container;
-}
 
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;;
+    }
+
+    
+}
+.features-container {
+    @media screen and (min-width: 1200px) {
+      min-width: 1200px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 768px;
+    }
+  }
 
 .features {
   @extend %list;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-left: 0;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
   & .item {
-  width: 270px;
+  width: 450px;
+
+  @media screen and (min-width: 768px)  {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px)  {
+    width: 270px;
+  }
 }
- & .item +.item {
-  margin-left: 30px;
-}
+
+//  & .item +.item {
+//   // margin-left: 30px;
+// }
 
 &-title {
   color: var(--primary-text-color);
@@ -26,6 +59,12 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px){
+    justify-content: flex-start;
+  }
 }
 
 &-content {
@@ -41,7 +80,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 4px;
   background: var(--secondary-bg-color);
 
