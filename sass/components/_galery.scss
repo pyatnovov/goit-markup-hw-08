@@ -1,8 +1,24 @@
 /* section2 */
 
 .galery{
-    
     @extend %container;
+    
+    &__container {
+    @media screen and (min-width: 1200px) {
+      min-width: 1200px;
+    }
+    }
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;;
+    }
+
+
 
     &__title {
         color: var(--primary-text-color);

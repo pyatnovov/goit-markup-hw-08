@@ -278,7 +278,6 @@ body {
 }
 
 .flex-container, .portfolio-container, .footer-container, .client__container, .team__container, .galery, .header {
-  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -569,6 +568,22 @@ body {
 }
 
 /* section2 */
+@media screen and (min-width: 1200px) {
+  .galery__container {
+    min-width: 1200px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .galery {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galery {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .galery__title {
   color: var(--primary-text-color);
   font-weight: 700;
