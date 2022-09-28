@@ -1,8 +1,13 @@
 /* section3 */
+.team__section {
+    @extend %section;
+
+}
 
 .team__container {
   @extend %container;  
 }
+
 .team {
     @extend %section;
     
@@ -23,6 +28,16 @@
     &__list {
     @extend %list;
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     
     & .team__item {
     background-color: var(--light-color);
@@ -31,12 +46,19 @@
     }
 
     .team__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
     }
     }
     .team__pic {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        min-width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 100%;
+    }
     }
 
     .team__wrap {

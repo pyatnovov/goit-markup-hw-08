@@ -284,7 +284,7 @@ body {
   margin-right: auto;
 }
 
-.portfolio, .сlient, .team, .features-section {
+.portfolio, .сlient, .team, .team__section, .features-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -644,6 +644,18 @@ body {
 }
 .team__list {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .team__list .team__item {
   background-color: var(--light-color);
@@ -651,11 +663,21 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team__list .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .team .team__pic {
   display: block;
-  max-width: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .team .team__pic {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team .team__pic {
+    min-width: 100%;
+  }
 }
 .team .team__wrap {
   padding-top: 30px;
