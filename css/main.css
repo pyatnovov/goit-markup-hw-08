@@ -870,6 +870,7 @@ body {
   .footer-container {
     width: 1200px;
     flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -877,6 +878,16 @@ body {
   background-color: var(--hero-footer-bg-color);
   padding-top: 64px;
   padding-bottom: 56px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 .footer .footer-logo {
   color: var(--light-color);
@@ -913,6 +924,7 @@ body {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__wrap {
     display: flex;
+    align-items: baseline;
     gap: 70px;
   }
 }
@@ -947,6 +959,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-number {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 
@@ -971,7 +984,6 @@ body {
 }
 
 .social {
-  display: flex;
   flex-direction: column;
   margin-bottom: 60px;
 }
@@ -990,6 +1002,11 @@ body {
 @media screen and (min-width: 1200px) {
   .social-title {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-bottom: 0;
   }
 }
 
@@ -1026,8 +1043,14 @@ body {
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
+  .mailing {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
   .mailing-form {
-    flex-direction: row-reverse;
+    margin-left: 93px;
+    align-items: baseline;
   }
 }
 .mailing-title {
@@ -1049,7 +1072,7 @@ body {
   }
 }
 .mailing-input {
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   background-color: var(--hero-footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1059,6 +1082,12 @@ body {
   outline: none;
   color: var(--light-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    width: 358px;
+    margin: 0;
+  }
 }
 .mailing-btn {
   cursor: pointer;
@@ -1080,7 +1109,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .mailing-btn {
-    display: inline;
+    margin-left: 12px;
   }
 }
 .mailing-btn:hover, .mailing-btn:focus {
