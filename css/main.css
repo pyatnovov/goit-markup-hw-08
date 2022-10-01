@@ -863,12 +863,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    width: 1200px;
+    min-width: 1200px;
     flex-direction: row;
     align-items: baseline;
   }
@@ -881,12 +881,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 .footer .footer-logo {
@@ -923,9 +923,8 @@ body {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__wrap {
-    display: flex;
     align-items: baseline;
-    gap: 70px;
+    gap: 0;
   }
 }
 .address {
@@ -1002,6 +1001,7 @@ body {
 @media screen and (min-width: 1200px) {
   .social-title {
     display: inline-block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {

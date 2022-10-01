@@ -8,12 +8,12 @@
     flex-direction: column;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        min-width: 768px;
         
     }
         
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        min-width: 1200px;
         flex-direction: row;
         align-items: baseline;
     }
@@ -22,11 +22,11 @@
 .footer {
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        min-width: 768px;
     }
         
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        min-width: 1200px;
     }
 
     background-color: var(--hero-footer-bg-color);
@@ -73,9 +73,8 @@
 
     @media screen and (min-width: 1200px){
     .footer__wrap {
-        display: flex;
         align-items: baseline;
-        gap: 70px;
+        gap: 0;
         }
     }
     }
@@ -160,6 +159,7 @@
     
     @media screen and (min-width: 1200px) {
     display: inline-block;
+    margin-left: auto;
     }
     }
 
