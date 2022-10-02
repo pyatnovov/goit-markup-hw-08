@@ -277,7 +277,7 @@ body {
   text-decoration: none;
 }
 
-.flex-container, .portfolio-container, .footer-container, .client__container, .team__container, .galery, .header {
+.portfolio-container, .footer-container, .client__container, .team__container, .galery, .header {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -924,7 +924,7 @@ body {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__wrap {
     align-items: baseline;
-    gap: 0;
+    gap: 70px;
   }
 }
 .address {
@@ -1333,9 +1333,17 @@ textarea::placeholder-shown {
 
 .flex-portfolio-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 8px;
+  width: 325px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .flex-portfolio-list {
+    justify-content: center;
+    width: 100%;
+  }
 }
 .flex-portfolio-list .item:last-child {
   margin-right: 0;
@@ -1382,15 +1390,17 @@ textarea::placeholder-shown {
 
 .flex-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
-.flex-card .item {
-  width: calc((100% - 60px) / 3);
-  margin-bottom: 0;
-}
-.flex-card .item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .flex-card {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .flex-card .item {
+    width: 354px;
+  }
 }
 
 .portfolio-link {
@@ -1413,7 +1423,7 @@ textarea::placeholder-shown {
 .partfolio-img {
   display: block;
   margin-top: 0;
-  max-width: 100%;
+  width: 100%;
 }
 
 .hoverinfo {

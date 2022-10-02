@@ -1,21 +1,23 @@
-    .flex-container {
-        @extend %container;
-    }
+
 
     .flex-card {
         @extend %list;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 30px;
+        
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: row;
 
-        & .item {
-            width: calc((100% - 60px) / 3);
-            margin-bottom: 0;
+            & .item {
+            width: 354px;
+        }
         }
 
-        & .item:nth-child(3n) {
-        margin-right: 0;
-        }
+        // & .item:nth-child(3n) {
+        // margin-right: 0;
+        // }
     }
 
     .portfolio-link {
@@ -43,7 +45,7 @@
     .partfolio-img {
         display: block;
         margin-top: 0;
-        max-width: 100%;
+        width: 100%;
     }
 
     .hoverinfo {
