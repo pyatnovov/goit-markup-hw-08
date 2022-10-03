@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-   <!-- Шапка сайта
+    <!-- Шапка сайта -->
     <header class="header">
 
     <div class="contact">
         
+    <a class="logo" lang="en" href="/"> <span class="span-logo">Web</span>Studio</a>
+
     <nav class= "site-nav main-nav" >
 
-        <a class="logo" lang="en" href="/"> <span class="span-logo">Web</span>Studio</a>
+    <!-- <a class="logo" lang="en" href="/"> <span class="span-logo">Web</span>Studio</a> -->
 
     <ul class="nav-list" >
         <li class="item">
@@ -36,6 +38,7 @@
     </ul>
     
     </nav>
+
      <ul class="contact-list">
         <li class="item">
             <a class="contact-mail" href="mailto:info@devstudio.com" >
@@ -54,8 +57,18 @@
             </a>  
          </li>
     </ul>
+
+    <button type="button" class="menu-btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg width="50" height="40">
+            <use href="./images/icons.svg#menu_btn"></use>
+        </svg>
+
+    </button>
+
     </div>
-    </header> -->
+    </header>
 
     <main>
         <!-- Герой
@@ -474,7 +487,7 @@
 
 
         </footer> -->
-    
+        <!-- Modal -->
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <button class="modaloff" data-modal-close>
@@ -531,7 +544,76 @@
                
             </div>
         </div>
+
+        <!-- Mobile menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+
+    <nav class= "menu-nav" >
+    <ul class="menu-list" >
+        <li class="item">
+            <a class="menu-link current"  href="" >Студія</a> 
+        </li>
+
+        <li class="item">
+            <a class="menu-link"  href="./portfolio.html">Портфоліо</a> 
+                    
+        </li>
+
+        <li class="item">
+            <a class="menu-link" href="">Контакти</a>  
+        </li>
+    </ul>
+    
+    </nav>
+
+     <ul class="menu-contact-list">
+        <li class="item">
+            <a class="menu-contact-mail" href="mailto:info@devstudio.com" >
+                 <svg class="marginsvg"width="16" height="12">
+                <use href=""></use>
+            </svg>
+        info@devstudio.com 
+        </a>
+        </li>
+
+        <li class="item">
+            <a class="menu-contact-phone" href="tel:+380961111111" >
+                <svg class="marginsvg" width="10" height="16">
+                <use href=""></use>
+            </svg>+38 096 111 11 11 
+            </a>  
+         </li>
+    </ul>
+
+        <ul class="mobile-socials">
+            <li>
+                <a href="" class="link">Instagram</a>
+            </li>
+            <li>
+                <a href="" class="link">Twitter</a>
+            </li>
+            <li>
+                <a href="" class="link">Facebook</a>
+            </li>
+            <li>
+                <a href="" class="link">LinkedIn</a>
+            </li>
+        </ul>
+        </div>
+
     <script src="./js/modal.js"></script>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+
+    <script defer src="js/mobile-menu.js"></script>
+
 </body>
 
 </html>
