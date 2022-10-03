@@ -106,9 +106,9 @@ display: none;
   fill: var(--secondary-text-color);
 
     @extend %list;
-    .item + .item{
-    margin-left: 50px;
-    }
+    // .item + .item{
+    // margin-left: 50px;
+    // }
     & .item:hover,
     & .item:focus{
         fill: var(--accent-text-color);
@@ -119,12 +119,13 @@ display: none;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        margin-left: auto;
     }
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;
         align-items: center;
-        gap:0;
+        gap: 30px;
     
     }
 }

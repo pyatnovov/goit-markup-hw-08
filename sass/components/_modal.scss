@@ -56,9 +56,9 @@
         cursor: pointer;
 
         transition: fill var(--timing--) var(--cubik--);
-    &:hover {
-        fill: var(--accent-text-color);
-    }
+        &:hover {
+            fill: var(--accent-text-color);
+        }
     }
     
     .modal-icon {

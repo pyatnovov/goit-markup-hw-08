@@ -9,10 +9,20 @@
     margin-top: auto;
     margin-bottom: auto;
 
+
     border: none;
     background-color: transparent;
 
+
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    } 
 }
 
 .menu-container {
@@ -25,6 +35,7 @@
 
     display: flex;
     flex-direction: column;
+
 
     padding: 48px 40px;
 
@@ -41,17 +52,84 @@
 .menu-nav {
     margin-bottom: auto;
 }
+
 .menu-toggle {
     position: absolute;
     top: 10px;
     right: 15px;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+
+    transition: fill var(--timing--) var(--cubik--);
+    &:hover {
+        fill: var(--accent-text-color);
+    }    
 }
+
 .menu-contact-list {
     @extend %list;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+
+
+}
+
+.menu-contact-phone {
+    @extend %link;
+    color: var(--accent-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;    
+    letter-spacing: 0.02em;
+}
+
+.menu-contact-mail {
+    @extend %link;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
 }
 
 .menu-list {
     @extend %list;
+    @extend %link;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+
+
+    & .menu-link {
+        @extend %link;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+
+        transition: color var(--timing--) var(--cubik--); 
+    &.current {
+        color: var(--accent-text-color);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }    
+
+    &:not(:last-child) {
+        margin-bottom: 36px;
+    }
+    }
     
 }
 
@@ -59,4 +137,13 @@
     @extend %list;
     display: flex;
     gap: 20px;
+}
+
+.mobile-socials-link {
+    @extend %link;
+    color: var(--accent-text-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
 }

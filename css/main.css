@@ -273,7 +273,7 @@ body {
   padding-left: 0;
 }
 
-.portfolio-link, .flex-footer-list .social-link, .team-social__link {
+.portfolio-link, .flex-footer-list .social-link, .team-social__link, .mobile-socials-link, .menu-list .menu-link, .menu-list, .menu-contact-mail, .menu-contact-phone {
   text-decoration: none;
 }
 
@@ -397,9 +397,6 @@ body {
   gap: 10px;
   fill: var(--secondary-text-color);
 }
-.contact-list .item + .item {
-  margin-left: 50px;
-}
 .contact-list .item:hover, .contact-list .item:focus {
   fill: var(--accent-text-color);
 }
@@ -409,13 +406,14 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-list {
     flex-direction: row;
     align-items: center;
-    gap: 0;
+    gap: 30px;
   }
 }
 
@@ -485,6 +483,16 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
 .menu-container {
   position: fixed;
@@ -511,11 +519,73 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: fill var(--timing--) var(--cubik--);
+}
+.menu-toggle:hover {
+  fill: var(--accent-text-color);
+}
+
+.menu-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.menu-contact-phone {
+  color: var(--accent-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.menu-contact-mail {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.menu-list .menu-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  transition: color var(--timing--) var(--cubik--);
+}
+.menu-list .menu-link.current {
+  color: var(--accent-text-color);
+}
+.menu-list .menu-link:hover, .menu-list .menu-link:focus {
+  color: var(--accent-text-color);
+}
+.menu-list .menu-link:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .mobile-socials {
   display: flex;
   gap: 20px;
+}
+
+.mobile-socials-link {
+  color: var(--accent-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 }
 
 /* hero */
