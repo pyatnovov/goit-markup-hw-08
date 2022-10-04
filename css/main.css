@@ -589,6 +589,11 @@ body {
 }
 
 /* hero */
+.hero__container {
+  width: 480px;
+  height: 400px;
+}
+
 .hero {
   background-color: var(--hero-footer-bg-color);
   padding-top: 200px;
@@ -600,18 +605,20 @@ body {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 .hero__title {
   color: var(--light-color);
   font-family: inherit;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -621,7 +628,7 @@ body {
   background-color: var(--accent-text-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 30px;
   display: block;
   width: 216px;
   margin: auto;
@@ -1314,7 +1321,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  min-width: 450px;
   padding: 40px;
   position: absolute;
   left: 50%;
@@ -1324,6 +1331,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--timing--) var(--cubik--);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal .modaloff {
   position: absolute;
@@ -1349,8 +1361,17 @@ body {
   height: 18px;
 }
 
+.form-terms-info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+}
+
 .application-form {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-title {
@@ -1376,6 +1397,7 @@ body {
   font-size: 12px;
 }
 .form-group-input {
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1383,6 +1405,11 @@ body {
   padding-left: 42px;
   padding-right: 42px;
   transition: border var(--timing--) var(--cubik--);
+}
+@media screen and (min-width: 1200px) {
+  .form-group-input {
+    width: 448px;
+  }
 }
 .form-group-input:hover, .form-group-input:focus {
   border-color: var(--accent-text-color);
@@ -1399,6 +1426,7 @@ body {
 }
 
 .form-group-textarea {
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1406,6 +1434,11 @@ body {
   padding-left: 16px;
   padding-top: 12px;
   resize: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-group-textarea {
+    width: 448px;
+  }
 }
 .form-group-textarea:hover {
   border-color: var(--accent-text-color);
@@ -1439,11 +1472,21 @@ textarea::placeholder-shown {
 .form-terms-info {
   display: inline-block;
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .form-terms-info {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .form-terms-link {
   color: var(--accent-text-color);

@@ -1,4 +1,9 @@
 /* hero */
+
+.hero__container {
+  width: 480px;
+  height: 400px;
+}
 .hero {
   background-color: var(--hero-footer-bg-color);
   padding-top: 200px;
@@ -14,19 +19,20 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 
   &__title {
   color: var(--light-color);
   font-family: inherit;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  width: 696px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -37,7 +43,7 @@
   background-color: var(--accent-text-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 30px;
 
   display: block;
   width: 216px;

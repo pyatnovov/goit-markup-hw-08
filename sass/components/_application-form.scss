@@ -1,9 +1,10 @@
 // application-form
 
 .application-form {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .form-title {
     display: block;
@@ -32,6 +33,7 @@
     }
 
     &-input {
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -41,6 +43,10 @@
     padding-right: 42px;
 
     transition: border var(--timing--) var(--cubik--);
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
 
     &:hover,
     &:focus {
@@ -63,6 +69,7 @@
 }
 
 .form-group-textarea {
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -71,6 +78,10 @@
     padding-top: 12px;
 
     resize: none;
+
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
 
     &:hover {
     border-color: var(--accent-text-color);
@@ -95,8 +106,17 @@ textarea::placeholder-shown {
     &-info {
     display: inline-block;
     color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
     margin-bottom: 30px;
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
     }
 
     &-link {
