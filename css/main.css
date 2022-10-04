@@ -590,22 +590,35 @@ body {
 
 /* hero */
 .hero__container {
-  width: 480px;
   height: 400px;
 }
 
 .hero {
   background-color: var(--hero-footer-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
+    background-size: cover;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: var(--light-color);
@@ -621,6 +634,14 @@ body {
   width: 360px;
   margin: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    width: 696px;
+  }
 }
 .hero__button {
   cursor: pointer;

@@ -1,21 +1,34 @@
 /* hero */
 
 .hero__container {
-  width: 480px;
   height: 400px;
 }
 .hero {
   background-color: var(--hero-footer-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 
   background: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
+  rgba(47, 48, 58, 0.4)), url(../images/heromobile.jpg);
+
+  @media screen and (min-width: 768px) {
+  background: linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url(../images/herotablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+  background: linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url(../images/heropic.jpg);
+  background-size: cover;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  }  
 
   background-repeat: no-repeat;
   background-position: center;
@@ -35,6 +48,13 @@
   width: 360px;
   margin: auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    width: 696px;
+  }
 }
 
 &__button {
