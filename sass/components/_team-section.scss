@@ -7,7 +7,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        min-width: 1200px;
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -29,6 +29,7 @@
     
     background-color: var(--secondary-bg-color);
     display: block;
+    margin: auto;
 
     &__title {
         color: var(--primary-text-color);
