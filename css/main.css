@@ -303,6 +303,12 @@ body {
   margin: -1px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   color: var(--light-color);
   border-bottom: 1px solid #ECECEC;
