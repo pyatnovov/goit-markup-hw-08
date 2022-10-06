@@ -1,5 +1,10 @@
 
-
+.flex-container {
+    @media screen and (min-width: 1200px){
+        padding-right: 215px;
+        padding-left: 215px;
+    }
+}
     .flex-card {
         @extend %list;
         display: flex;
@@ -12,12 +17,14 @@
 
             & .item {
             width: 354px;
+            }
         }
+        @media screen and (min-width: 1200px) {
+            // & .item {
+            // width: 370px;
+            // }             
         }
 
-        // & .item:nth-child(3n) {
-        // margin-right: 0;
-        // }
     }
 
     .portfolio-link {

@@ -1645,6 +1645,13 @@ textarea::placeholder-shown {
   width: 130px;
 }
 
+@media screen and (min-width: 1200px) {
+  .flex-container {
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+}
+
 .flex-card {
   display: flex;
   flex-direction: column;
@@ -1659,7 +1666,6 @@ textarea::placeholder-shown {
     width: 354px;
   }
 }
-
 .portfolio-link {
   display: block;
   transition: box-shadow var(--timing--) var(--cubik--);
