@@ -1666,6 +1666,12 @@ textarea::placeholder-shown {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .flex-card .item {
+    width: 370px;
+  }
+}
+
 .portfolio-link {
   display: block;
   transition: box-shadow var(--timing--) var(--cubik--);
