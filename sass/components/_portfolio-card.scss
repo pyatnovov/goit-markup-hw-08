@@ -1,10 +1,17 @@
+    .portfolio {
+        @extend %section;
 
-.flex-container {
-    @media screen and (min-width: 1200px){
-        padding-right: 215px;
-        padding-left: 215px;
+    @media screen and (min-width: 768px) {
+        min-width: 768px;
     }
-}
+
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
+        padding-left: 215px;
+        padding-right: 215px;
+    }
+    }
+    
     .flex-card {
         @extend %list;
         display: flex;
@@ -16,12 +23,12 @@
             flex-direction: row;
 
             & .item {
-            width: 354px;
+            width: calc((100% - 60px) / 2);
             }
         }
         @media screen and (min-width: 1200px) {
             & .item {
-            width: 370px;
+            width: calc((100% - 90px) / 3);
             }             
         }
 
