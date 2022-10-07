@@ -52,8 +52,6 @@
   @media screen and (min-width: 769px) {
   background: linear-gradient(rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)), url(../images/hero/img__lg__@1x.jpg);
-  background-size: cover;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-repeat: no-repeat;
@@ -66,10 +64,17 @@
 
   background: linear-gradient(rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)), url(../images/hero/img__lg__@2x.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   } 
+
+
+  @media screen and (min-width: 1200px){
+    height: 600px;
+  }
   }  
 
  
@@ -83,9 +88,6 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  width: 360px;
   margin: auto;
   margin-bottom: 30px;
 

@@ -3,31 +3,24 @@
 .сlient__section {
     @extend %section;
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
     @media screen and (min-width: 1200px) {
-        width: 1600px;
-        padding-top: 94px;
-        padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
 }
 
 
 .client__container{
-    @extend %container;
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     @media screen and (min-width: 768px) {
         min-width: 768px;
     }
         
-    @media screen and (min-width: 1200px) {
-        min-width: 1170px;
-    }
-
-
-
     .client__title {
     color: var(--primary-text-color);
     font-weight: 700;
@@ -83,14 +76,6 @@
     
     transition: fill var(--timing--) var(--cubik--);
 
-    @media screen and (min-width: 768px) {
-    width: 226px;
-    margin-bottom: 0;
-    }
-        
-    @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-    }
 
     &:hover,
     &:focus {

@@ -33,7 +33,6 @@
     }
 
     &-input {
-    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -43,6 +42,10 @@
     padding-right: 42px;
 
     transition: border var(--timing--) var(--cubik--);
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }    
 
     @media screen and (min-width: 1200px) {
         width: 448px;
@@ -69,7 +72,6 @@
 }
 
 .form-group-textarea {
-    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -78,6 +80,10 @@
     padding-top: 12px;
 
     resize: none;
+
+    @media screen and (min-width: 480px) {
+        width: 370px;   
+    }
 
     @media screen and (min-width: 1200px) {
         width: 448px;

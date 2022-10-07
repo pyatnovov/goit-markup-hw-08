@@ -34,22 +34,20 @@
   @media screen and (min-width: 1200px) {
     align-items: baseline;
   }
-  & .item {
-  width: 450px;
 
-  @media screen and (min-width: 768px)  {
+& .item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px)  {
+  @media screen and (min-width: 1200px) {
     width: 270px;
-  }
+  }  
 }
-
-//  & .item +.item {
-//   // margin-left: 30px;
-// }
-
 &-title {
   color: var(--primary-text-color);
   font-weight: 700;
