@@ -7,9 +7,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        min-width: 1200px;
-        padding-top: 94px;
-        padding-bottom: 94px;
+        width: 1200px;
     }
 }
 
@@ -21,12 +19,13 @@
     }
     
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        min-width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
 .team {
-    
     background-color: var(--secondary-bg-color);
     display: block;
     margin: auto;
@@ -44,10 +43,11 @@
 
     &__list {
     @extend %list;
-    display: flex;
-    flex-direction: column;
 
-
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+    }
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -65,8 +65,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    .team__item:not(:last-child) {
+    @media screen and (max-width: 480px) {
+    &:not(:last-child) {
     margin-bottom: 30px;
+    }
     }
 
     @media screen and (min-width: 768px) {
