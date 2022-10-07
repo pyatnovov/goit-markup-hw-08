@@ -239,7 +239,7 @@
     }
 
     &-input {
-    min-width: 300px;
+    min-width: 450px;
     height: 50px;
     background-color: var(--hero-footer-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -251,7 +251,7 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 1200px) {
-        width: 358px;
+        min-width: 358px;
         margin: 0;
     }
     }

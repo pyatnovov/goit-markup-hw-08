@@ -586,6 +586,12 @@ img {
   gap: 20px;
 }
 
+.vl {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  width: 0;
+  height: 22px;
+}
+
 .mobile-socials-link {
   color: var(--accent-text-color);
   font-weight: 500;
@@ -1307,7 +1313,7 @@ img {
   }
 }
 .mailing-input {
-  min-width: 300px;
+  min-width: 450px;
   height: 50px;
   background-color: var(--hero-footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1320,7 +1326,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .mailing-input {
-    width: 358px;
+    min-width: 358px;
     margin: 0;
   }
 }
