@@ -60,16 +60,19 @@
         flex-direction: row;
     }
 
+    & .team__item:not(:last-child) {
+      margin-bottom: 30px;
+      
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    } 
+    }
+
     & .team__item {
     background-color: var(--light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (max-width: 480px) {
-    &:not(:last-child) {
-    margin-bottom: 30px;
-    }
-    }
 
     @media screen and (min-width: 768px) {
         width: 354px;

@@ -1,17 +1,17 @@
 
-.header {
- @extend %container;
-  color: var(--light-color);
-  border-bottom: 1px solid #ECECEC;
+.header-container {
+    @extend %container;
+    color: var(--light-color);
+    border-bottom: 1px solid #ECECEC;
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
   }
+
     @media screen and (min-width: 1200px) {
     min-width: 1200px;
-    // padding-left: 215px;
-    // padding-right: 215px;
-
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 
@@ -126,6 +126,7 @@ display: none;
         flex-direction: row;
         align-items: center;
         gap: 30px;
+        margin-left: 312px;
     
     }
 }
