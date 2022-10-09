@@ -647,7 +647,7 @@ img {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img__lg__@1x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img__lg__@1x.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
@@ -657,7 +657,7 @@ img {
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img__lg__@2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Img__lg__@2x.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
